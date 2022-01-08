@@ -4,13 +4,16 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "editor": "phasereditor2d-launcher -project . -port 1959",
+    "editor-remote": "phasereditor2d-launcher -project . -disable-open-browser -public -port 1959"
   },
   "devDependencies": {
     "typescript": "^4.4.4",
     "vite": "^2.7.2"
   },
   "dependencies": {
-    "phaser": "^3.55.2"
+    "phaser": "^3.55.2",
+    "phasereditor2d-launcher": "^3.31.2"
   }
 }
