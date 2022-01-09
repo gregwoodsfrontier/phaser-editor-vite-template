@@ -5,8 +5,6 @@
 
 import Phaser from "phaser";
 import PreloadText from "../components/PreloadText";
-//@ts-ignore
-import preloadPackUrl from "@/assets/asset-pack.json";
 
 export default class Preload extends Phaser.Scene {
 
@@ -45,7 +43,7 @@ export default class Preload extends Phaser.Scene {
 
 		this.editorCreate();
 
-		this.load.pack("asset-pack", preloadPackUrl);
+		this.load.pack("asset-pack", "assets/asset-pack.json");
 
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Level"));
 	}
